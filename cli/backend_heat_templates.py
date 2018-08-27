@@ -134,6 +134,7 @@ class HeatBackend(BaseBackend):
             'SSH_KEY',
             'OS_USER',
             'networkCidr',
+            'outboundCidr',
             'KEYSTONE_AUTH_URL',
             'KEYSTONE_USER',
             'KEYSTONE_PASSWORD',

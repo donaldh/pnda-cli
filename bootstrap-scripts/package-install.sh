@@ -35,6 +35,9 @@ fi
 if [ "x$networkCidr" != "x" ]; then
 iptables -A LOGGING -d  ${networkCidr} -j ACCEPT
 fi
+if [ "x$outboundCidr" != "x" ]; then
+iptables -A LOGGING -d  ${outboundCidr} -j ACCEPT
+fi
 if [ "x$privateSubnetCidr" != "x" ]; then
 iptables -A LOGGING -d  ${privateSubnetCidr} -j ACCEPT
 fi

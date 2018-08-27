@@ -78,6 +78,9 @@ openstack_parameters:
   # CIDR specifying the address range for the public subnet (bastion access)
   publicSubnetCidr: 10.0.0.0/24
 
+  # CIDR specifying the address range to allow for outbound access during setup
+  outboundCidr:
+
 terraform_parameters:
   # Username to log into vSphere
   VS_USER: username
